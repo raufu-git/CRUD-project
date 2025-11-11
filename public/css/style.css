@@ -1,0 +1,180 @@
+/* ===========================
+   🌙 Global Style
+=========================== */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f5f6fa;
+  margin: 0;
+  padding: 20px;
+  color: #2f3640;
+}
+
+/* ===========================
+   📦 Container Layout
+=========================== */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+h1 {
+  text-align: center;
+  color: #2f3640;
+  margin-bottom: 20px;
+}
+
+/* ===========================
+   🍔 Burger Menu
+=========================== */
+.burger {
+  width: 30px;
+  height: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.burger span {
+  height: 4px;
+  width: 100%;
+  background: #333;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Dropdown Menu */
+.menu {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  padding: 10px 0;
+  display: none;
+  flex-direction: column;
+  width: 200px;
+  z-index: 100;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px 20px;
+  display: block;
+  transition: background 0.2s;
+}
+
+.menu a:hover {
+  background: #f3f4f6;
+}
+
+.menu.show {
+  display: flex;
+}
+
+/* ===========================
+   📋 Table
+=========================== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+  background-color: #273c75;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* ===========================
+   🔘 Buttons
+=========================== */
+a.btn,
+button.btn {
+  background-color: #44bd32;
+  color: white;
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: 0.2s;
+  border: none;
+  cursor: pointer;
+}
+
+a.btn:hover,
+button.btn:hover {
+  background-color: #2ecc71;
+}
+
+a.btn-danger,
+button.btn-danger {
+  background-color: #c23616;
+}
+
+a.btn-danger:hover,
+button.btn-danger:hover {
+  background-color: #e84118;
+}
+
+/* ===========================
+   🧾 Forms
+=========================== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input[type="text"],
+input[type="number"] {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  align-self: flex-start;
+}
+
+/* ===========================
+   🧾 select
+=========================== */
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  height: 35px; /* ini yang bikin lebih tinggi */
+  box-sizing: border-box;
+}
+
+select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.4);
+}
