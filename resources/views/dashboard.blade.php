@@ -73,12 +73,10 @@
                 <li><form action="{{ route('logout') }}" method="POST" style="display:inline;">
                     @csrf
                     <button type="submit" style="
-                        background: none;
-                        border: none;
-                        color: #0077b6;
+                        background: #005481ff;
+                        color: #ffffffff;
                         font-size: 16px;
                         cursor: pointer;
-                        text-decoration: underline;
                     ">
                         Logout
                     </button>
